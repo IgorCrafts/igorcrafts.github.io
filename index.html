@@ -20,161 +20,43 @@ title: Home
 <div class="col py-3">
 
   <!-- LANDING FULL SCREEN PAGE --->
-  <div class="container" style="min-height:100vh; text-align:center;">
-
-    <div class="row" id="about">
-      <div class="col-md-10">
-      <h2 class="page-title">Few words about me</h2>
-      <hr style="width:40%; background:#02456F;">
-      </div>
-    </div>
-
-    <div class="row" style="margin-top:30px;">
-      <div class="col-md-8 offset-md-1">
-        Cofounder of <a href="https://docteurmemo.fr">La Clinique du Docteur Memo</a>.
-        <br>In charge of Product & Tech
-        <br>&bull;<br>
-        PhD in Machine Learning applied to Neurosciences (<a href="https://theses.hal.science/tel-02524279v1/document">manuscript</a>)
-        <br>&bull;&bull;<br>
-        Ex-Postdoctoral Researcher [ Inria ] x [ Paris Brain Institute ]
-        <br>
-        Ex-PhD Student at [ Paris Brain Institute ] x [ Ecole Polytechnique ]
-        <br>
-        Ex-Deep Learning Lead Instructor [ Le Wagon ].
-        <br>&bull;<br>
-        Always involved in new projects.
-      </div>
-    </div>
-
-
-    <div class="row" style="margin-top:5%;">
-      <div class="col-md-2 offset-md-3">
-        <a class="btn btn-primary" href="/research" role="button">Research</a>
-      </div>
-      <div class="col-md-2 ">
-        <a class="btn btn-primary" href="/projects" role="button">Projects</a>
-      </div>
-    </div>
-
-
-
-    <div class="row" style="margin-top:10%;">
-
-      <div class="col-md-10">
-        <hr style="width:30%; background:#02456F;">
-        <ul class="list-inline social-buttons">
-          <li class="list-inline-item">
-            <a href='mailto:igor[dot]koval[at]qairnel[dot]com'>
-              <i class="fa fa-envelope "></i>
-            </a>
-          </li>
-
-          <li class="list-inline-item">
-            <a href='https://www.linkedin.com/in/igor-koval-98767360/'>
-              <i class="fa fa-linkedin "></i>
-            </a>
-          </li>
-
-          <li class="list-inline-item">
-            <a href='https://scholar.google.fr/citations?user=dlgocecAAAAJ&hl=fr'>
-              <i class="fa fa-google"></i>
-            </a>
-          </li>
-
-          <li class="list-inline-item">
-            <a href='https://github.com/Symcies'>
-              <i class="fa fa-github"></i>
-            </a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-
-    <div class="row" style="margin-top:30px;">
-      <div class="col-md-10">
-        <a href="#me" class="btn btn-circle js-scroll-trigger btn-xl text-uppercase">
-          <i class="fa fa-angle-double-down animated "></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-
-
   <div class="container">
 
-    <!-- ABOUT SECTION --->
-    <div class="row" id="me">
-      <div class="col-md-10">
-      <h2>About me</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-10">
-        {% for d in site.data.about.description%}
-          <div class="about-text">{{d}}</div><br><br>
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="row">
-
-    </div>
-
-  <!-- INTERESTS SECTION --->
-  <div class="row" id="interests" style="margin-top:70px;">
-    <div class="col-md-10">
-      <h2>Scientific Interests & Skills</h2>
-    </div>
-    </div>
-
-  {% for s in site.data.about.skills %}
-    <div class="row text-center interests-row">
-      <div class="col-md-2">
-        <i class="fa fa-{{s.img}} fa-4x"></i>
-        <h5>{{s.title}}</h5>
+    <div class="row" id="about">
+      <div class="col-md-10" style="margin-bottom: 60px;">
+        <h2 class="page-title">Working on something new.</h2>
+        <h3 class="page-subtitle text-muted">2025 onwards</h3>
+        <div class="about-text">I love building things. Especially when they combine science, product, and technology to make complex problems simple — and create solutions that genuinely help people.
+          I'm currently exploring new problems to solve at the intersection of healthcare, tech, and meaningful impact.</div>
       </div>
 
-      <div class="col-md-8">
-        {% for tag in s.tags %}
-          <span class="interests-tag">{{tag}}</span>
-        {% endfor %}
-      </div>
-    </div>
-  {% endfor %}
-
-
-  <!-- EDUCATION SECTION -->
-  <div class="row" id="education" style="margin-top:70px;">
-    <div class="col-md-10">
-      <h2>Education</h2>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-10">
-      {% for edu in site.data.education %}
-        <div class="row education-row">
-          <div class="col-md-2 education-img">
-            <img class="img-fluid" src={{edu.img}} alt="{{edu.title}}">
-          </div>
-          <div class="col-md-10">
-            <div class="about-text">
-              <div class="education-title">{{edu.title}}</div>
-              <div class="education-period">{{edu.period}}</div>
-              <div>{{edu.description}}</div>
-              {% for tag in edu.tags %}
-                <span class="education-tag">{{tag}}</span>
-              {% endfor %}
-            </div>
-          </div>
+      <div class="col-md-10" style="margin-bottom: 60px;">
+        <h2 class="page-title">Qairnel co-founder & CPTO</h2>
+        <h3 class="page-subtitle text-muted">From 2023 to 2025</h3>
+        <div class="about-text">I served as CTO and CPO of <a href="https://qairnel.com">Qairnel</a>, building platforms that help pharmaceutical companies accelerate and de-risk their neurology clinical trials, especially in Alzheimer’s disease. Our work combined:
+          <ul>
+            <li>Product & operations: large-scale recruitment of prescreened patients through <a href="https://docmemo.com">DocMemo.com</a> and  <a href="https://docmemo.fr">DocMemo.fr</a>.</li>
+            <li>AI: models that match participants’ profiles to open trials and support inclusion decisions.</li>
+          </ul>
         </div>
-      {% endfor %}
+      </div>
+
+      <div class="col-md-10" style="margin-bottom: 60px;">
+        <h2 class="page-title">Researcher in Machine Learning & Neuroscience</h2>
+        <h3 class="page-subtitle text-muted">From 2016 to 2022</h3>
+        <div class="about-text">
+          <ul>
+          <li>Postdoctoral Researcher • [ Inria ] x [ Paris Brain Institute ]</li>
+          <li>PhD in Machine Learning applied to Neurosciences (<a href="https://theses.hal.science/tel-02524279v1/document">manuscript</a>) • [ Paris Brain Institute ] x [ Ecole Polytechnique ]</li>
+          <li>Ex-Deep Learning Lead Instructor • [ Le Wagon ].</li>
+        </ul>
+        </div>
+      </div>
     </div>
   </div>
+
+
+
 </div>
 </div>
 </div>

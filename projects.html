@@ -3,37 +3,19 @@ layout: default
 permalink: /projects/
 ---
 
-<div class="row" id="body-row">
-
-<!-- Sidebar -->
-<div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
-  <span class="list-group sticky-top sticky-offset">
-    {% include sticky_side.html %}
-</div>
-<!-- Sidebar END-->
-
-
-<div class="col py-3">
-
-
   <!-- RESEARCH SECTION -->
-  <div class="container" style="text-align:center; margin-bottom:40px;">
+  <div class="container">
+
     <div class="row" id="about">
-      <div class="col-md-10">
+      <div class="col-md-8 offset-md-2">
       <h2 class="page-title">Projects</h2>
       <h3 class="page-subtitle text-muted">A few words about what I do - or did - on the side.</h3>
       <hr style="width:40%; background:#02456F;">
       </div>
     </div>
-  </div>
-
-
-
-
-  <div class="container">
 
     <div class="row">
-      <div class="col-md-10">
+      <div class="col-md-8 offset-md-2">
         {% for project in site.data.projects %}
         <div href="#{{project.id}}" class="row project" data-toggle="modal" style="background-image: url({{site.baseurl}}/{{project.img}}); background-size: cover;">
             <div class="col-md-10 offset-md-1" >
@@ -89,7 +71,7 @@ permalink: /projects/
     </div>
 
     <div class="row">
-      <div class="col-md-10">
+      <div class="col-md-8 offset-md-2">
         Some other projects I've been involved in :
         <ul>
           <li>Aramis website - <a href="http://www.aramislab.fr/"> here</a></li>
@@ -101,9 +83,7 @@ permalink: /projects/
       </div>
     </div>
   </div>
-</div>
 
-</div>
 
 
 
