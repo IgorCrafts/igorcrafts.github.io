@@ -1,460 +1,237 @@
 ---
 ---
-@charset "utf-8";
 
-/********************/
-/*  FONT VARIABLES  */
-/********************/
-$icon-font-path:      "../font/bootstrap";
-$fa-font-path:        "../font/font-awesome";
+/* Minimal, text-first layout */
 
-/*************/
-/*  IMPORTS  */
-/*************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-@import "variables";
-@import "bootstrap/bootstrap";
-@import "font-awesome/font-awesome";
-@import "agency/agency";
-
-/*******************/
-/*  GENERAL RULES  */
-/*******************/
-@media screen and (max-width: 760px) {
-  html {
-    overflow-x: hidden;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    padding-top: 106px;
-    font-size: 16px;
-    font-weight: 300;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #151515;
+  background-color: #f7f3ec;
 }
 
-.sticky-offset {
-    top: 136px;
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-a {
-  color: #5ba3d5;
+.site-main {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem 1.5rem 2.5rem;
 }
 
-h2 {
-  margin-top:40px;
-  margin-bottom: 30px;
-  font-size: 36px;
-  font-weight: 500;
+.site-content,
+.article {
+  width: 100%;
+  max-width: 700px;
 }
 
-.page-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.site-content {
+  font-size: 1rem;
 }
 
-.page-subtitle {
-  margin-bottom: 10px !important;
-  font-size: 16px;
-  font-weight: 200;
-  margin-bottom: 75px;
-  text-transform: none;
+.site-header {
+  flex: 0 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #f7f3ec;
 }
 
-
-
-/**************/
-/*   SIDEBAR  */
-/**************/
-
-.profile {
-  display: block;
+.header-inner {
+  max-width: 700px;
   margin: 0 auto;
-  height: auto;
-  width: 60%;
-  border-radius: 50%;
-  border: 6px solid #02456f;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0rem 0.75rem;
 }
 
-.side-link{
-  font-size: 20px;
-  padding-left: 25%;
-  padding-bottom: 4px;
-  color: #02456F;
-}
-
-
-.about-link{
+.site-title-link {
+  text-decoration: none;
   color: inherit;
 }
 
-.about-link .fa {
-  margin-right:10px;
+.site-title-text {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.8;
 }
 
-.sticky-side-list {
-  list-style-type: none;
-  padding: 0px;
+.lang-switch {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
-.sticky-side {
-  padding-left: 25%;
-}
-
-/**************/
-/*   NAVBAR   */
-/**************/
-
-
-.navbar {
-  padding: 10px 140px;
-  background-color: #02456F;
-}
-
-@media (max-width: 640px) {
-  .navbar {
-    padding: 10px 30px 14px 0px;
-  }
-}
-
-.navbar-brand {
-  font-size: 28px;
-}
-
-.main-nav-link{
-  font-size: 20px;
-  padding: 16px 20px !important;
-  color: #fff !important;
-
-  /* Set up the hover */
-  /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
-  background-image: linear-gradient(white, white);
-  background-size: 0 3px, auto;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  transition: all .2s ease-out;
-}
-
-.main-nav-link.active {
-    background-size: 80% 3px, auto !important;
-}
-
-
-.main-nav-link:hover {
-  background-size: 80% 3px, auto;
-}
-
-
-/**************/
-/*    ABOUT   */
-/**************/
-
-
-.btn-circle:focus, .btn-circle:hover {
-    outline: 0;
-    color: #fff;
-    background: black;
-}
-
-.btn-primary {
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  margin: 10px 15px;
-  color: #fff;
-  background-color: #02456f;
-  border-color: #02456f;
-}
-
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid black;
-    border-radius: 100% !important;
-    font-size: 40px;
-    color: black;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.education-row {
-  margin-bottom: 50px;
-}
-
-.education-img {
-  display:table-cell;
-  vertical-align:middle;
-  text-align:center;
-}
-
-.education-img img{
-  max-height:120px;
-  max-width: 100%;
-}
-
-@media (max-width: 640px) {
-  .education-img img{
-    max-height: 150px;
-    max-width: 180px;
-  }
-}
-
-.about-text{
-  text-align: justify;
-  padding: 0px 15px;
-  border-left-style: solid;
-  border-left-color: #02456f;
-  border-left-width: medium;
-}
-
-.education-title {
-  font-size: 20px;
-
-}
-
-.education-period {
-  font-size: 16px;
-  color: #b4b4b4;
-}
-
-.education-tag {
+.lang-pill {
   display: inline-block;
-  line-height: 1;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.lang-pill:hover {
+  border-color: rgba(0, 0, 0, 0.75);
+}
+
+.lang-pill-active {
+  background-color: #151515;
+  color: #f7f3ec;
+  border-color: #151515;
+  font-weight: 600;
+}
+
+.lang-sep {
+  opacity: 0.55;
+}
+
+.site-footer {
+  flex: 0 0 auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 1.5rem 1.5rem 2rem;
   text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 400;
-  background-color: #02456f;
-  color: #FFF
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
-
-/**************/
-/*  RESEARCH  */
-/**************/
-
-.publi-row {
-  margin-bottom: 40px;
+.footer-text {
+  margin: 0 0 0.5rem;
 }
 
-.publi-modal {
-  min-height: 0px !important;
-  margin-bottom: 0px !important;
+.footer-links {
+  margin: 0;
 }
 
-.publi-title {
-  font-size: 18px;
+.footer-links a {
   font-weight: 500;
 }
 
-.publi-authors {
-  font-size: 14px;
+.footer-separator {
+  margin: 0 0.4rem;
+  opacity: 0.5;
 }
 
-.publi-info {
-  color: #b4b4b4;
+a {
+  color: #0a4a85;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(10, 74, 133, 0.25);
+  padding-bottom: 0.04em;
 }
 
-
-
-@media (max-width: 640px) {
-  .img-modal {
-    display: none;
-  }
-  .publi-title {
-    font-size: 16px;
-  }
-  .publi-authors {
-    font-size: 12px;
-  }
+a:hover {
+  border-bottom-color: currentColor;
 }
 
-
-
-
-
-.publi-tag {
-  display: inline-block;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 400;
-  background-color: #02456f;
-  color: #FFF
+.internal-link {
+  color: #111111;
+  font-weight: 750;
+  border-bottom-width: 2px;
+  border-bottom-color: #111111;
 }
 
-.teach-row {
-  margin-bottom: 50px;
+.internal-link:hover {
+  background-color: rgba(53, 168, 209, 0.3);
 }
 
-.teach-title {
+strong {
+  font-weight: 700;
+}
 
-  font-size: 20px;
+a strong,
+strong a {
+  font-weight: 750;
+}
+
+p {
+  margin: 0 0 0.7rem 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 4rem 0 0.7rem 0;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.article-title {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-subtitle {
+  margin-top: -0.25rem;
+  margin-bottom: 1.75rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.landing-intro {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.landing-subintro {
+  font-size: 1.8rem;
   font-weight: 300;
-  line-height: 100%;
+  line-height: 1.25;
+  margin-bottom: 7rem;
 }
 
-.teach-period {
-
-  color: #b4b4b4;
+.landing-intro span {
+  display: block;
 }
 
-.teach-location {
-  font-size: 16px;
+.landing-body p {
+  margin-bottom: 1.05rem;
 }
 
-.teach-text {
-  font-size: 16px;
-}
+@media (max-width: 720px) {
+  body {
+    font-size: 17px;
+  }
 
-@media (max-width: 640px) {
-  .teach-text div {
-    font-size: 14px;
+  .site-main {
+    padding: 2.5rem 1.25rem 2rem;
+  }
+
+
+  .landing-intro {
+    font-size: 1.65rem;
   }
 }
 
-/************/
-/*  MAPBOX  */
-/************/
-
-#mapbox {
-  width: 100%;
-  height: 500px;
-}
-
-.marker {
-  background-image: url('../img/map-icon.png');
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-
-.mapboxgl-popup {
-  border-radius: 4px 4px 0px 0px;
-  max-width: 350px;
-
-}
-
-.mapboxgl-popup-content {
-  text-align: center;
-  border-radius: 4px !important;
-  font-family: 'Open Sans', sans-serif !important;
-  width: 350px;
-  padding: 0px !important;
-  overflow: hidden;
-}
-@media(max-width:767px) {
-  .mapboxgl-popup-content {
-    width: 90%;
-  }
-}
-
-.mapbox-title {
-  font-size: 24px;
-  font-weight: 600;
-  font-style: italic;
-  margin-top: 10px;
-}
-
-.mapbox-sub {
-  font-size: 16px;
-  color: #b4b4b4;
-}
-
-
-.mapbox-text {
-  margin: 4px;
-  font-size: 14px;
-}
-
-.mapbox-text p {
-  line-height: 100% !important;
-  margin-bottom: 10px;
-}
-
-.mapbox-links {
-  font-size: 14px;
-}
-
-
-/***************/
-/*  INTERESTS  */
-/***************/
-
-.interests-row {
-  margin: 20px 0px;
-}
-
-.interests-tag {
-  margin: 3px;
-  display: inline-block;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  padding: 8px 14px;
-  border-radius: 4px;
-  font-size: 15px;
-  background-color: #02456f;
-  color: #FFF;
-}
-
-/**************/
-/*  PROJECTS  */
-/**************/
-
-.project:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.project {
-  height:180px;
-  margin-bottom: 20px;
-  color: white;
-  opacity: 0.7;
-}
-
-.project-title {
-  margin-top: 10px;
-  font-weight: 600;
-  font-size: 30px;
-  text-shadow: 2px 2px 3px black;
-  opacity: 1;
-}
-
-.project-subtitle {
-  font-style: italic;
-  font-weight: 300;
-
-}
-
-.project-paragraph {
-  margin-top: 30px;
-  margin-bottom:6px;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: left;
-}
-
-
-
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";

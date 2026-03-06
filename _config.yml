@@ -6,7 +6,7 @@
 name: Igor Koval
 
 # Short bio or description (displayed in the header)
-description: Machine Learning PhD student
+description: Researcher & builder in AI, neuroscience, and healthcare workflows.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/12412493?s=400&u=9f824611d9e9bc6df74f0a99fedb50090262faa6&v=4
@@ -16,24 +16,11 @@ avatar: https://avatars3.githubusercontent.com/u/12412493?s=400&u=9f824611d9e9bc
 #
 
 # Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: igor.koval@icm-institute.org
-  facebook:
-  flickr:
-  github: Symcies/
-  instagram:
-  linkedin: www.linkedin.com/in/igor-koval-98767360
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter:
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+footer-links: {}
 
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-108938900-1
+google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -44,6 +31,12 @@ url:
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
+
+# Languages
+languages:
+  - en
+  - fr
+default_lang: en
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -66,7 +59,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :compressed # You might prefer to minify using :compressed, or :expanded
+  style: :expanded # keep CSS readable; GitHub Pages will still compress in transit
 
 # Use the following plug-ins
 gems:
@@ -80,3 +73,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - archive
+  - img
+  - js
+  - font
+  - .jekyll-cache

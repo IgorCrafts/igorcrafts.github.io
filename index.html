@@ -1,67 +1,20 @@
 ---
-layout: default
-title: Home
+layout: null
 ---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url={{ site.baseurl }}/{{ site.default_lang }}/" />
+    <link rel="canonical" href="{{ site.baseurl }}/{{ site.default_lang }}/" />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <p>
+      Redirecting to
+      <a href="{{ site.baseurl }}/{{ site.default_lang }}/">{{ site.default_lang | upcase }}</a>
+      version…
+    </p>
+  </body>
+</html>
 
-
-<div class="row" id="body-row">
-
-<!-- Sidebar -->
-<div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
-    <span class="list-group sticky-top sticky-offset">
-      <div style="margin-bottom: 20px;">
-        <img class="profile" src="img/profil.jpg" alt="profile picture">
-      </div>
-      {% include sticky_side.html %}
-    </span>
-</div>
-<!-- Sidebar END-->
-
-<div class="col py-3">
-
-  <!-- LANDING FULL SCREEN PAGE --->
-  <div class="container">
-
-    <div class="row" id="about">
-      <div class="col-md-10" style="margin-bottom: 60px;">
-        <h2 class="page-title">Working on something new.</h2>
-        <h3 class="page-subtitle text-muted">2025 onwards</h3>
-        <div class="about-text">I love building things. Especially when they combine science, product, and technology to make complex problems simple — and create solutions that genuinely help people.
-          I'm currently exploring new problems to solve at the intersection of healthcare, tech, and meaningful impact.</div>
-      </div>
-
-      <div class="col-md-10" style="margin-bottom: 60px;">
-        <h2 class="page-title">Qairnel co-founder & CPTO</h2>
-        <h3 class="page-subtitle text-muted">From 2023 to 2025</h3>
-        <div class="about-text">I served as CTO and CPO of <a href="https://qairnel.com">Qairnel</a>, building platforms that help pharmaceutical companies accelerate and de-risk their neurology clinical trials, especially in Alzheimer’s disease. Our work combined:
-          <ul>
-            <li>Product & operations: large-scale recruitment of prescreened patients through <a href="https://docmemo.com">DocMemo.com</a> and  <a href="https://docmemo.fr">DocMemo.fr</a>.</li>
-            <li>AI: models that match participants’ profiles to open trials and support inclusion decisions.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-10" style="margin-bottom: 60px;">
-        <h2 class="page-title">Researcher in Machine Learning & Neuroscience</h2>
-        <h3 class="page-subtitle text-muted">From 2016 to 2022</h3>
-        <div class="about-text">
-          <ul>
-          <li>Postdoctoral Researcher • [ Inria ] x [ Paris Brain Institute ]</li>
-          <li>PhD in Machine Learning applied to Neurosciences (<a href="https://theses.hal.science/tel-02524279v1/document">manuscript</a>) • [ Paris Brain Institute ] x [ Ecole Polytechnique ]</li>
-          <li>Ex-Deep Learning Lead Instructor • [ Le Wagon ].</li>
-        </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-</div>
-</div>
-</div>
-
-<script>
-  var aboutlink = document.getElementById('aboutlink');
-  aboutlink.className="nav-link main-nav-link active";
-</script>
