@@ -1,62 +1,61 @@
 ---
 layout: default
-title: Éducation
+title: Parcours académique
 permalink: /fr/education/
 lang: fr
 translation_key: education
 alt_lang: en
 alt_url: /en/education/
-subtitle: Math appliquées, IA et neurosciences
+subtitle: Mathématiques appliquées, IA et neurosciences
 ---
 
 # Mon parcours académique
 
 <div class="landing-subintro" markdown="1">
-De l’école d’ingénieur à un doctorat en mathématiques appliquées, pour prédire l’évolution des maladies neurodégénératives.
+De l'école d'ingénieur à la thèse en Machine Learning, appliquée aux maladies neurodégénératives
 </div>
 
-### Une relation étrange avec les maths et la recherche
+### Un rapport complexe aux mathématiques et à la recherche
 
-À 20 ans, en entrant à **l’École des Ponts**, je me suis juré d'arrêter les maths, par manque d'applications concrètes. J’ai envisagé un double diplôme avec une échole de commecer. Mais une diplômée m'en a découragé très clairement : *« Apprends d’abord des compétences techniques. Tu auras le temps pour la partie business plus tard. »*
+À 20 ans, en entrant à l'**École des Ponts**, je m'étais juré d'arrêter les maths. Le manque d'applications concrètes me pesait. Et j'ai envisagé de bifurquer vers les écoles de commerce. Mais une diplômée m'en a découragé : *« Apprends d’abord des compétences techniques. Tu auras le temps pour la partie business plus tard. »*
 
-Alors j’ai redonné une chance aux maths. J’ai étudié l’économie à **l’Université Paris Dauphine**, puis j’ai fait un stage en Machine Learning à Argonne, un laboratoire national américain. C’est là que j'ai enfin trouvé un intérêt aux maths. Intérêt poursuivi en master de Machine Learning à **l’École Polytechnique**.
+J'ai donc donné une seconde chance aux mathématiques. J'ai étudié l'économie à l'**Université Paris Dauphine**, puis j'ai effectué un stage en Machine Learning à [Argonne](https://www.anl.gov/), un laboratoire de recherche américain. C'est là que le déclic s'est produit, me conduisant à faire un Master de Machine Learning de l'**École Polytechnique**.
 
-À la fin du master, je souhaitais mettre à profit mes compétences en rejoignant une entreprise. Mais, en pleine mode du “Big Data", le manque de compétences qui y régnaient m'en a découragé.
+À la fin du master, je souhaitais mettre à profit mes compétences en rejoignant une entreprise. Mais, en pleine mode du “Big Data”, le manque de compétences qui y régnaient m’en a découragé.
 
-Pour cette raison, j’ai démarré une thèse avec [Stanley Durrleman](https://who.rocq.inria.fr/Stanley.Durrleman/) et [Stéphanie Allassonnière](https://sites.google.com/site/stephanieallassonniere/).
+Pour cette raison, je me suis tourné vers la recherche et j'ai commencé un doctorat avec [Stanley Durrleman](https://who.rocq.inria.fr/Stanley.Durrleman/) et [Stéphanie Allassonnière](https://sites.google.com/site/stephanieallassonniere/).
 
-### Mes recherches scientifiques : modéliser l’évolution des maladies neurodégénératives
+### Modéliser la progression des maladies neurodégénératives
 
-Mes recherches scientifiques portaient sur la modélisation et la prédiction de la progression des maladies neurodégénératives (Alzheimer, Parkinson, Huntington). L’objectif était triple :
+Mes travaux portaient sur la modélisation de l'évolution des maladies neurodégénératives comme Alzheimer, Parkinson ou Huntington. L'objectif était triple :
 
-- Reconstruire la progression “moyenne” sur de longues échelles de temps
-- Caractériser les trajectoires individuelles par rapport à cette moyenne
-- Prédire l’évolution individuelle jusqu’à ~5 ans à l’avance
+- Reconstruire la progression « moyenne » sur de longs horizons temporels,
+- Caractériser les trajectoires individuelles par rapport à cette moyenne,
+- Prédire l'évolution individuelle jusqu'à ~5 ans à l'avance.
 
-Le tout avec des données multimodales : tests cognitifs, imagerie (IRM, TEP), et biomarqueurs sanguins. Les difficultés à les traiter étaient multiples. Leur progression n’est pas linéaire. Les suivis sont irréguliers, manquants ou incomplets. Chaque personne n’apporte qu’une petite pièce du puzzle, et la variabilité interindividuelle est importante.
+Tout cela à partir de données multimodales : évaluations cognitives, imagerie (IRM, TEP) et biomarqueurs sanguins. Les difficultés étaient multiples. Les données biomédicales réelles sont imprévisibles. La progression n'est pas linéaire, son rythme change. Les suivis sont irréguliers, manquants ou incomplets. Chaque patient ne fournit qu'une petite pièce du puzzle et la variabilité inter-individuelle est importante.
 
-Nous avons donc développé un modèle capable de s’adapter à différentes maladies et données, qui tire profit de (1) la géométrie riemannienne, (2) la modélisation probabiliste de l’hétérogénéité, et (3) l’inférence sous incertitude et données manquantes (Monte Carlo / chaînes de Markov, Expectation–Maximization).
+Nous avons donc construit un modèle unique capable de s'adapter aux différentes maladies et modalités, reposant sur (1) la géométrie riemannienne, (2) la modélisation probabiliste de l'hétérogénéité, et (3) l'inférence sous incertitude et données manquantes (chaînes de Markov / Monte Carlo, Expectation–Maximization).
 
-L’essentiel de mon travail académique est dans [ma thèse](https://theses.hal.science/tel-02524279v1/file/85395_KOVAL_2020_archivage.pdf) et des articles, notamment :
+L'essentiel de mes travaux académiques se trouve dans [ma thèse](https://theses.hal.science/tel-02524279v1/file/85395_KOVAL_2020_archivage.pdf) et mes publications, notamment :
 
-* applications en imagerie ([Frontiers in Neurology](https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2018.00235/full), [MICCAI](https://arxiv.org/pdf/1709.08491))
-* applications Alzheimer à large échelle ([Scientific Reports](https://www.nature.com/articles/s41598-021-87434-1))
-* applications Huntington ([Scientific Reports](https://www.nature.com/articles/s41598-022-18848-8))
+- Applications en imagerie ([Frontiers in Neurology](https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2018.00235/full), [MICCAI](https://arxiv.org/pdf/1709.08491))  
+- Applications larges sur Alzheimer ([Scientific Reports](https://www.nature.com/articles/s41598-021-87434-1))  
+- Applications sur Huntington ([Scientific Reports](https://www.nature.com/articles/s41598-022-18848-8))  
 
-### Faire une recherche qui reste
+À son apogée, cette approche a permis un travail de prédiction à grande échelle, publié dans [**Nature Communications**](https://www.nature.com/articles/s41467-022-35712-5), démontrant que nos modèles pouvaient prévoir la progression d'Alzheimer jusqu'à cinq ans à l'avance. 
 
-Dès le début de la thèse, j’ai été frappé par le fait que chaque nouvel étudiant repartait de zéro (concepts, code, logiciels). Chacun apprennait beaucoup, mais collectivement, on perdait des années.
+### Créer une recherche qui ne disparaît pas après la publication
 
-Alors, en parallèle de mes publications, j’ai développé [**Leaspy**](https://leaspy.readthedocs.io/en/stable/), un package Python avec une intention simple : donner aux futurs doctorants et ingénieurs une base qu’ils puissent étendre avec de nouveaux modèles, de nouvelles cohortes, de nouvelles maladies, de nouvelles analyses. 
+Dès le début de la thèse, j’ai été frappé par le fait que chaque nouvel étudiant repartait quasiment de zéro.
 
-Ce package a été largement réutilisé dans le laboratoire dans le cadre de :
+Parallèlement à mes publications, j'ai donc décidé de créer [**Leaspy**](https://leaspy.readthedocs.io/en/stable/), une librairie Python avec une intention simple : donner aux futurs doctorants et ingénieurs une base qu'ils pourraient étendre avec de nouveaux modèles, de nouvelles cohortes, de nouvelles maladies et de nouvelles analyses. 
 
-* nouveaux modèles de progression (voir [R Couronné à MICCAI](https://hal.science/hal-03491692/document), [N Fournier à MICCAI](https://hal.science/hal-04295080v1/file/fournier_durrleman_MICCAI2023.pdf), [S Gruffaz à NIPS](https://proceedings.neurips.cc/paper_files/paper/2021/file/c7b90b0fc23725f299b47c5224e6ec0d-Paper.pdf), [PE Poulet à IPMI](https://inria.hal.science/hal-03276811/document) et [Statistics in Medecine](https://inria.hal.science/hal-04095450/document), [J Ortholand dans Journal of Neurology](https://link.springer.com/article/10.1007/s00415-023-11932-7))
-* nouvelles maladies et nouveaux jeux de données (voir [C Di Folco dans Movement Disorders](https://movementdisorders.onlinelibrary.wiley.com/doi/abs/10.1002/mds.29662), [F Cacciamani dans Alzheimer's & Dementia](https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.053074), [B Sauty dans Frontiers in Neurology](https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1161527/full), [E Petit dans Brain](https://academic.oup.com/brain/advance-article-abstract/doi/10.1093/brain/awaf408/8305366), [S Kaisaridi dans Neurology](https://www.neurology.org/doi/10.1212/WNL.0000000000210193))
+C'est devenu le socle de nombreux travaux ultérieurs, incluant :
 
+- de nouveaux modèles de progression (voir [R Couronné dans MICCAI](https://hal.science/hal-03491692/document), [N Fournier dans MICCAI](https://hal.science/hal-04295080v1/file/fournier_durrleman_MICCAI2023.pdf), [S Gruffaz dans NIPS](https://proceedings.neurips.cc/paper_files/paper/2021/file/c7b90b0fc23725f299b47c5224e6ec0d-Paper.pdf), [PE Poulet dans IPMI](https://inria.hal.science/hal-03276811/document) et [Statistics in Medicine](https://inria.hal.science/hal-04095450/document), [J Ortholand dans Journal of Neurology](https://link.springer.com/article/10.1007/s00415-023-11932-7))  
+- de nouvelles maladies et jeux de données (voir [C Di Folco dans Movement Disorders](https://movementdisorders.onlinelibrary.wiley.com/doi/abs/10.1002/mds.29662), [F Cacciamani dans Alzheimer's & Dementia](https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.053074), [B Sauty dans Frontiers in Neurology](https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2023.1161527/full), [E Petit dans Brain](https://academic.oup.com/brain/advance-article-abstract/doi/10.1093/brain/awaf408/8305366), [S Kaisaridi dans Neurology](https://www.neurology.org/doi/10.1212/WNL.0000000000210193))  
 
-Nos travaux les plus poussés et validés ont fait l'objet d'une publication dans [**Nature Communications**](https://www.nature.com/articles/s41467-022-35712-5), montrant que nos modèles pouvaient prédire l’évolution d’Alzheimer jusqu’à cinq ans à l’avance.
+Ce même instinct de « durabilité » s'est manifesté ailleurs : [article Medium sur Leaspy](https://medium.com/@igoroa/analysis-of-longitudinal-data-made-easy-with-leaspy-f8d529fcb5f8), [enseignement](/fr/teaching/), [Digital-Brain.org](https://project.inria.fr/digitalbrain/), le site [Disease Progression Modeling](https://disease-progression-modelling.github.io/pages/main.html#), et des collaborations avec des équipes académiques et pharmaceutiques pour analyser des données d'essais cliniques (quantification des effets des médicaments, stratification des populations).
 
-Cette intention de "consolider" la recherche a aussi été à l'origine d'un [post Medium à propos de Leaspy](https://medium.com/@igoroa/analysis-of-longitudinal-data-made-easy-with-leaspy-f8d529fcb5f8), [de cours](/en/teaching/), de [Digital-Brain.org](https://project.inria.fr/digitalbrain/), du site [Disease Progression Modeling](https://disease-progression-modelling.github.io/pages/main.html#) et de collaborations avec des équipes académiques et pharma pour analyser des données d’essais cliniques (quantifier des effets de traitement, stratifier des populations).
-
-C’est aussi ce qui m’a poussé vers [la création de ma première entreprise.](/en/startup/){:.internal-link}
+C'est aussi ce qui m'a poussé à [créer ma première entreprise.](/fr/startup/){:.internal-link}
