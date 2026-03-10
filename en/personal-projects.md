@@ -26,6 +26,8 @@ They’re also a safe playground: low stakes, fast feedback, lots of repetition.
 
 And they tend to find an audience. Sometimes because the project is useful. Sometimes because you share something honestly and it resonates. Either way, they often connected me with people I genuinely enjoy talking to.
 
+Across both professional and personal work, my operating system stays the same: understand first; ship something small and fast; iterate.
+
 ### Over time, I noticed my side projects weren’t as random as they looked
 
 I usually start because an idea won’t let go, or because something feels broken, or because I’m curious. I start them for their own sake—no hidden intent, no optimization. But looking back, most fall into one (or more) of three themes.
